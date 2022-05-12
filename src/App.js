@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Songcard from "./Songcard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <Songcard
+   songtitle= "Cool ass song"
+   artist= "Jimmy Walker"
+   style= "Rock and Roll"
+   chords="['G', 'D', 'Am', 'C', 'Em', 'G/B']"
+   />
+
     </div>
   );
 }
